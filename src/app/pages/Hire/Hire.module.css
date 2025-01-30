@@ -1,0 +1,353 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    padding: 40px 20px;
+    letter-spacing: 0.7px;
+    font-family: "BPG Ingiri", sans-serif;
+  }
+  
+  .add_post {
+    margin: 20px 0 40px;
+  }
+  
+  .add_post button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    font-family: "BPG Ingiri", sans-serif;
+  }
+  
+  .add_post button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .posts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  
+  .jobCard {
+    position: relative;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .jobCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .jobCard h3 {
+    font-size: 32px;
+    color: #2d3748;
+    margin: 0 0 20px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .desc {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .description {
+    background: #f7fafc;
+    border-radius: 10px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px;
+    max-width: 1000px; /* Set maximum width */
+    width: 100%;
+    word-wrap: break-word; /* Ensure text wraps within the max width */
+    overflow-wrap: break-word; /* Alternative for wider compatibility */
+    white-space: normal; /* Allow wrapping of text */
+    border-left: 4px solid #667eea;
+  }
+  
+  .jobCard p {
+    color: #718096;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .applyButton {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "BPG Ingiri", sans-serif;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+  }
+  
+  .applyButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .posts {
+      padding: 20px;
+    }
+    
+    .jobCard {
+      padding: 20px;
+    }
+    
+    .jobCard h3 {
+      font-size: 24px;
+    }
+  }
+  .search {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.search input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    font-family: "BPG Ingiri", sans-serif;
+}
+
+.search button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    cursor: pointer;
+    font-family: "BPG Ingiri", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  }
+  
+  .search {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .search button {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .search button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  }
+  
+  .add_post {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+  }
+  
+  .add_post button {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .add_post button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  }
+  
+  .posts {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .jobCard {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .jobCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .jobCard h3 {
+    font-size: 24px;
+    color: #2d3748;
+    margin-bottom: 20px;
+  }
+  
+  .desc {
+    font-weight: bold;
+    color: #4a5568;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    background: #f7fafc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid #667eea;
+  }
+  
+  .applicationForm {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a5568;
+  }
+  
+  .formGroup textarea,
+  .formGroup input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+  
+  .formGroup textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  .formGroup textarea:focus,
+  .formGroup input:focus {
+    outline: none;
+    border-color: #667eea;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .buttonGroup button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .buttonGroup button[type="submit"] {
+    background: #667eea;
+    color: white;
+    border: none;
+  }
+  
+  .buttonGroup button[type="button"] {
+    background: white;
+    color: #4a5568;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .buttonGroup button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .applyButton {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .applyButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  }

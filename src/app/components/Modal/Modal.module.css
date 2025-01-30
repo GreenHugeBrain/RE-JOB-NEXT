@@ -1,0 +1,131 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    font-family: "BPG Ingiri", sans-serif;
+    letter-spacing: 0.7px;
+  }
+  
+  .modal {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: modalSlide 0.3s ease-out;
+  }
+  
+  @keyframes modalSlide {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s;
+  }
+  
+  .closeButton:hover {
+    color: #333;
+  }
+  
+  .modalTitle {
+    font-size: 24px;
+    color: #2d3748;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .formGroup label {
+    font-size: 16px;
+    color: #4a5568;
+    font-weight: 500;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+  }
+  
+  .formGroup input:focus,
+  .formGroup textarea:focus {
+    outline: none;
+    border-color: #667eea;
+  }
+  
+  .formGroup textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .submitButton {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .submitButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .modal {
+      padding: 20px;
+      width: 95%;
+    }
+    
+    .modalTitle {
+      font-size: 20px;
+    }
+    
+    .formGroup input,
+    .formGroup textarea {
+      font-size: 14px;
+    }
+  }

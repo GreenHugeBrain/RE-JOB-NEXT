@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=BPG+Ingiri&display=swap');
+
+* {
+    font-family: "BPG Ingiri", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.7px;
+}
+
+.profile-bg {
+    background: #f8f9fa;
+    min-height: calc(100vh - 120px);
+    padding: 2rem 1rem;
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    position: relative;
+}
+
+.sidebar {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.profile-image {
+    text-align: center;
+    position: relative;
+}
+
+.profile-image img {
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.status-badge {
+    background: #48bb78;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.role-badge {
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 0.75rem;
+    background: #ebf4ff;
+    color: #4299e1;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.profile-stats {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+}
+
+.stat {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+.label {
+    color: #718096;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.contact-info {
+    border-top: 1px solid #edf2f7;
+    padding-top: 1.5rem;
+}
+
+.contact-info h3 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0.75rem 0;
+    color: #4a5568;
+}
+
+.info-item span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.main-content {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.profile-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f7fafc;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #2d3748;
+}
+
+.verified {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #48bb78;
+    font-weight: 500;
+}
+
+.about-section, .resume-section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #2d3748;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.upload-area {
+    border: 2px dashed #e2e8f0;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    border-color: #4299e1;
+    background: #f7fafc;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-area label {
+    cursor: pointer;
+    color: #4a5568;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #4299e1;
+    color: white;
+    border: none;
+}
+
+.btn-secondary {
+    background: white;
+    color: #e53e3e;
+    border: 1px solid #e53e3e;
+}
+
+.btn-primary:hover {
+    background: #3182ce;
+    transform: translateY(-1px);
+}
+
+.btn-secondary:hover {
+    background: #fed7d7;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
+}
